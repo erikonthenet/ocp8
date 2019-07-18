@@ -1,3 +1,3 @@
-public interface Run {
-    abstract double getMaxSpeed();
+public interface Run extends Walk {
+    public abstract double getMaxSpeed();
 }

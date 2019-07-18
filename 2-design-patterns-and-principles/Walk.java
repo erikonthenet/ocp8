@@ -1,3 +1,3 @@
 public interface Walk {
-    abstract double getMaxSpeed();
+    protected abstract double getMaxSpeed();
 }
