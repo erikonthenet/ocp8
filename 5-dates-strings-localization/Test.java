@@ -1,4 +1,6 @@
 import java.time.*;
+import java.time.temporal.ChronoUnit;
+import java.util.Properties;
 
 class Test {
     public static void main(String[] args) {
@@ -15,5 +17,13 @@ class Test {
         System.out.println(dateTime);
         System.out.println(dateTime.plus(d));
 
+        System.out.println(Duration.of(1, ChronoUnit.MINUTES).toString());
+        System.out.println(Duration.ofMinutes(1).toString());
+        System.out.println(Duration.ofSeconds(60).toString());
+
+        Properties props = new Properties();
+        props.put("a", "aap");
+        props.put("b", "noot");
+        props.put("c", "mies");
     }
 }
